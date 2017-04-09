@@ -1,0 +1,41 @@
+body{
+	
+}
+#home{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	}
+
+div#home > img {
+    height:100%;
+	width:100%;
+
+    position:absolute;
+	object-fit: cover;
+	/* width: 100%; */
+	/* width: 100%; */
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+img.top:hover{
+	opacity: 0;
+}
+
+.overlay {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  left: 10%;
+  top: 50%;
+}
+
+#wish {
+	//line-height: 1;
+}
