@@ -5,7 +5,6 @@ body{
 	position: relative;
 	height: 100%;
 	width: 100%;
-	background-color: red;
 	}
 
 div#home > img {
@@ -27,7 +26,7 @@ img.top:hover{
 }
 
 .overlay {
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   color: white;
   font-size: 34px;
@@ -36,6 +35,68 @@ img.top:hover{
   top: 50%;
 }
 
+#gift {
+	display: inline-block;
+	height: 100%;
+}
+
 #wish {
-	//line-height: 1;
+	line-height: 1;
+	display: inline-block;
+
+}
+
+.letter {
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   image-orientation: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5 !important;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+.message {
+  z-index: 3;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  padding: 7px;
+  left: 0%;
+  top: 0%;
+  /* opacity: 1; */
+}
+
+#blackcover	{
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	background-image:
+    -webkit-linear-gradient(black, grey);
+	background-image:
+    -o-linear-gradient(black, grey);
+	background-image:
+    linear-gradient(black, black);;
+    opacity: .5;
+    left: 0%;
+ 	 top: 0%;
 }
